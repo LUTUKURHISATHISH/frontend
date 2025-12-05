@@ -1,0 +1,107 @@
+.Address_text {
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    padding-left: 1%;
+}
+.location {
+    max-width: none;
+    height: auto;
+}
+
+.footer-top {
+/*    background-image: url('./images/footerbackground.png');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-box {
+    background-color: #0c6ab0;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+.contact-box h3 {
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width: 560px) {  /* Adjust for mobile screens */
+    .footer-widget-2 {
+        padding-top: 10px;
+
+    }
+}
+.react-footer .footer-top {
+    padding: 255px 0 20px !important;
+}
+
+.line_footer{
+    width: 30%;
+    color: #f05819;
+    height: 4px;
+    background-color: #f05819;
+    opacity: 15.6 !important;
+    border-top: 3px solid;
+/*    border: none;*/
+margin-top: -17px;
+}
+.react-footer .copyright .container {
+    padding-top: 8px!important;
+    padding-bottom: 8px !important;
+}
+
+    @media (min-width: 300px) and (max-width: 500px) { 
+      .d-flex {
+         display: grid !important;
+     }
+     .card_with{
+       margin: -31px;   
+    }
+    .card_with {
+        transform: translateY(-31px);
+    }
+    }
+    @media (min-width: 400px) and (max-width: 1183px) { 
+      .d-flex {
+       display: inline-masonry !important;
+    }
+    
+    }
+    @media (min-width: 1184px) and (max-width: 3000px) { 
+      .card-body{
+        padding: 30px;
+    }
+   
+    }
+    .card-body-footer{
+        box-shadow: 1px 1px 1px 4px #fff !important;
+    }
+
+    @media (min-width: 1500px) and (max-width: 3000px) { 
+        .quick_side{
+            margin-left: 120px !important;  
+        }
+    }
+
+    @media (min-width: 1000px) and (max-width: 1045px) {
+    .laptop_1024{
+        padding: 5px 0px 12px 5px !important;
+        box-shadow: rgb(255, 255, 255) 1px 1px 1px 4px;
+        width: 772px;
+        background: white;
+        margin-left: -50px;
+    }
+    }
+
+     @media (min-width: 1024px) and (max-width: 1025px) { 
+        .react-footer .footer-top .footer-widget-3{
+            margin-left: 85px !important;  
+        }
+        .react-footer .footer-top .footer-widget.footer-widget-2 {
+            margin-left: -47px !important;
+     }
+    }
+
+
+    

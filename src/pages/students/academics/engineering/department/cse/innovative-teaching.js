@@ -1,0 +1,49 @@
+import React from 'react'
+import Header from '../../../../../../components/Header';
+import StudyBreadcrumb from '../../../../../../components/Breadcrumb/outreach';
+import SideManu from './sidebar';
+import SideManuDept from '../../../commonpages/sidebar-menu';
+// import InnovativeTeaching from '../../../../../../data/InnovativeTeaching.json'
+import ScrollToTop from '../../../../../../components/ScrollTop';
+import FooterTwo from '../../../../../../components/Footer/index';
+
+ import InnovativeTeachingDetails from '../../../commonpages/innovativeTeaching-details';
+
+const MiningInnovativeTeaching = () => {
+    const department = 'CSE';
+    const nodata = "This Section will be update Very Soon.."
+    return (
+        <>
+            <Header parentMenu='academics' menuCategoryEnable='enable' />
+            <div class="react-wrapper background_height">
+                <div class="react-wrapper-inner background_image">
+                    <StudyBreadcrumb pageTitle="Overview" />
+                    <div className="high_quality-section pt---60 pb---120">
+                        <div class="container ">
+                            <SideManu />
+                            <div className="col-md-12 col-sm-12 col-12 bg_color bg-white">
+                                <div className="col-md-4 d-flex justify-content-end w-100 mb-3">
+                                    <SideManuDept department={department} />
+                                </div>
+                                <div class="container">
+                                    <div className="row ">
+                                        <div className="col-md-12 col-12">
+                                            <h4 className="hedingname_orange mb-4">Innovative Teaching Methods</h4>
+                                        </div>
+                                    </div>
+                                    <div className='row'>
+                                        <InnovativeTeachingDetails department={department} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ScrollToTop />
+                </div>
+            </div>
+            <FooterTwo />
+        </>
+    )
+}
+
+export default MiningInnovativeTeaching;

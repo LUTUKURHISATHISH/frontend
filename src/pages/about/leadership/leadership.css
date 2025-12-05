@@ -1,0 +1,67 @@
+.chancellor {
+    padding: 3.5%;
+}
+
+.leadershipbtn {
+    background-color: #0c6ab0 !important;
+    color: white !important;
+    padding: 10px 40px !important;
+    border-radius: 20px !important;
+    font-size: 16px !important;
+    text-align: center !important;
+}
+
+.leadershipbtn:hover {
+    background-color: #f05819 !important;
+    color: white !important;
+}
+.leadername{
+    font-weight: 600;
+    color: "#f05819"
+}
+.leadernamerole{
+  color: #F05819;
+}
+
+
+.content_leaderShip {
+    font-size: 16px;
+    text-align: justify;
+
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+    .responsive_leadership {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    @media (max-width: 280px) and (min-width: 575px) {
+        .responsive_leadership {
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+    }
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .responsive_leadership {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .modal-body .leadership_popup,
+    .modal-body .leadership_popup {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .modal-body img {
+        height: auto;
+        max-height: 300px;
+    }
+}
+.registrar_card{
+    justify-content: left !important;
+}

@@ -1,0 +1,28 @@
+.program-columns {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 984px) {
+  .program-columns {
+   justify-content: left;
+}
+}
+.column {
+/*    display: flex;*/
+    flex-direction: column;
+    gap: 10px;
+}
+
+.program label {
+    margin-left: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.me-2 {
+    margin-right: .5rem !important;
+    width: 82px !important;
+}

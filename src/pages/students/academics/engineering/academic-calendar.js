@@ -1,0 +1,153 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import Header from '../../../../components/Header';
+import FooterTwo from '../../../../components/Footer/index';
+import StudyBreadcrumb from '../../../../components/Breadcrumb/outreach';
+import ScrollToTop from '../../../../components/ScrollTop';
+import SideManu from './sidebar';
+import Academic_calendar_image from './images/calendar.png';
+
+const backendUrl = process.env.REACT_APP_DATABASEURL;
+const backendUrlPath = process.env.REACT_APP_BACKEND_URL;
+
+const titleMap = {
+    "B.Tech": "B.Tech (Bachelor of Technology)",
+    "M.Tech": "M.Tech (Master of Technology)",
+    "MCA": "MCA (Master of Computer Application)"
+};
+
+const Business_Calendar = () => {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [regulationData, setRegulationData] = useState([]);
+
+    const toggleAccordion = (index) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    };
+
+    useEffect(() => {
+        axios.get(`${backendUrlPath}/api/eng-calendar`)
+            .then((res) => {
+                const titleOrder = Object.keys(titleMap);
+
+                const ordered = titleOrder
+                    .map((key, index) => {
+                        const match = res.data.find(item => item._id === key);
+                        if (match) {
+                            return {
+                                id: index,
+                                title: match._id,
+                                title1: titleMap[match._id],
+                                image: Academic_calendar_image,
+                                pdf: match.data
+                            };
+                        }
+                        return null;
+                    })
+                    .filter(Boolean);
+
+                const others = res.data
+                    .filter(item => !titleOrder.includes(item._id))
+                    .map((item, index) => ({
+                        id: ordered.length + index,
+                        title: item._id,
+                        title1: item._id,
+                        image: Academic_calendar_image,
+                        pdf: item.data
+                    }));
+
+                setRegulationData([...ordered, ...others]);
+            })
+            .catch((err) => console.error("Failed to load Academic Calendar", err));
+    }, []);
+
+    return (
+        <>
+            <Header parentMenu='academics' menuCategoryEnable='enable' />
+            <div className="react-wrapper background_height">
+                <div className="react-wrapper-inner background_image">
+                    <StudyBreadcrumb pageTitle="Academic Calendar" />
+                    <div className="high_quality-section pt---60 pb---120">
+                        <div className="container">
+                            <SideManu />
+                            <div className="row m-0 react__title__section-all">
+                                <div className="col-md-12 col-sm-12 col-12 bg_color" style={{ backgroundColor: "#fff" }}>
+                                    <br />
+                                    <div className="container">
+                                        {regulationData.length === 0 ? (
+                                            <p style={{ textAlign: 'center', padding: '20px' }}>
+                                                No Academic Calendar found.
+                                            </p>
+                                        ) : (
+                                            regulationData.map(({ id, title, title1, image, pdf }) => (
+                                                <React.Fragment key={id}>
+                                                    <button
+                                                        className={`accordion ${activeIndex === id ? 'active-card' : ''}`}
+                                                        onClick={() => toggleAccordion(id)}
+                                                    >
+                                                        <img src={image} style={{ height: '40px' }} alt={title} />&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        {title}
+                                                        <span className="symbol">{activeIndex === id ? '▲' : '▼'}</span>
+                                                    </button>
+
+                                                    <div
+                                                        style={{
+                                                            display: activeIndex === id ? 'block' : 'none',
+                                                            marginBottom: '14px'
+                                                        }}
+                                                    >
+                                                        <br />
+                                                        <table style={{ width: "100%" }}>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style={{ textAlign: 'center' }}>Program</th>
+                                                                    <th style={{ textAlign: 'center' }}>Academic Calendar</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                {pdf.map((item, i) => (
+                                                                    <tr key={i}>
+                                                                        {i === 0 && (
+                                                                            <td
+                                                                                rowSpan={pdf.length}
+                                                                                style={{
+                                                                                    textAlign: 'center',
+                                                                                    verticalAlign: 'middle'
+                                                                                }}
+                                                                            >
+                                                                                {title1}
+                                                                            </td>
+                                                                        )}
+                                                                        <td style={{ textAlign: 'center' }}>
+                                                                            <a
+                                                                                href={`${backendUrl}/academic_calendars/${item.attachment}`}
+                                                                                target="_blank"
+                                                                                rel="noopener noreferrer"
+                                                                                style={{ color: "#000" }}
+                                                                                className='namehover'
+                                                                            >
+                                                                                {title}-{item.regulations}
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                ))}
+                                                            </tbody>
+                                                        </table>
+                                                        <br />
+                                                    </div>
+                                                </React.Fragment>
+                                            ))
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ScrollToTop />
+                </div>
+            </div>
+            <FooterTwo />
+        </>
+    );
+};
+
+export default Business_Calendar;

@@ -1,0 +1,32 @@
+{
+    "studies": [
+        {
+            "id": 1,
+            "name": "Dr. Aditya Kumar Patra",
+            "designation": "Associate Professor",
+            "posOfCommittee": "Member"
+        },
+        {
+            "id": 2,
+            "name": "Dr. Aruna Mangalpady",
+            "designation": "Professor",
+            "posOfCommittee": "Member"
+        },
+        {
+            "id": 3,
+            "name": "Mr. Vishal Chauhan",
+            "designation": "Sr. Scientist",
+            "posOfCommittee": "Member"
+        }
+    ],
+    "minutes": [
+        {
+            "id": 1,
+            "name": "BOS Scheduled on",
+            "Year": "28-08-2024",
+            "DocType": "View",
+            "ShowIcon": true,
+            "download": true
+        }
+    ]
+}

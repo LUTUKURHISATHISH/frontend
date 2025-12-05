@@ -1,0 +1,185 @@
+[
+    {
+        "id":1,
+        "list" : [
+            {
+            "name":"RWTH Aachen University",
+            "image":"/collaborations/Institute/1.webp"
+            },
+            {
+            "name":"Valparaiso University",
+            "image":"/collaborations/Institute/29.webp"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "list" : [
+            {
+            "name":"University  Wisconsin",
+            "image":"/collaborations/Institute/3.webp"
+            },
+            {
+            "name":"Georgia Institue of Technology",
+            "image":"/collaborations/Institute/4.webp"
+            }
+        ]
+    },
+   
+     {
+        "id":4,
+        "list" : [
+            {
+            "name":"University of Memphis",
+            "image":"/collaborations/Institute/7.webp"
+            },
+            {
+            "name":"German University",
+            "image":"/collaborations/Institute/8.webp"
+            }
+        ]
+    },
+     {
+        "id":5,
+        "list" : [
+            {
+            "name":"Rowan University",
+            "image":"/collaborations/Institute/9.webp"
+            },
+            {
+            "name":"University of South carolina",
+            "image":"/collaborations/Institute/10.webp"
+            }
+        ]
+    },
+    {
+        "id":6,
+        "list" : [
+            {
+            "name":"University of Kristen Indonesia",
+            "image":"/collaborations/Institute/11.webp"
+            },
+            {
+            "name":"University of Hawai",
+            "image":"/collaborations/Institute/12.webp"
+            }
+        ]
+    },
+    {
+        "id":7,
+        "list" : [
+            {
+            "name":"South University",
+            "image":"/collaborations/Institute/13.webp"
+            },
+            {
+            "name":"San Diego state University",
+            "image":"/collaborations/Institute/14.webp"
+            }
+        ]
+    },
+    {
+        "id":8,
+        "list" : [
+            {
+            "name":"Saintpeters University",
+            "image":"/collaborations/Institute/15.webp"
+            },
+            {
+            "name":"University of Bedfordshire",
+            "image":"/collaborations/Institute/16.webp"
+            }
+        ]
+    },
+    {
+        "id":9,
+        "list" : [
+            {
+            "name":"Hutech University",
+            "image":"/collaborations/Institute/17.webp"
+            },
+            {
+            "name":" Arizona State University",
+            "image":"/collaborations/Institute/18.webp"
+            }
+        ]
+    },
+    {
+        "id":10,
+        "list" : [
+            {
+            "name":"TC Istambul University",
+            "image":"/collaborations/Institute/19.webp"
+            },
+            {
+            "name":" Medipol Univertisty",
+            "image":"/collaborations/Institute/20.webp"
+            }
+        ]
+    },
+     {
+        "id":11,
+        "list" : [
+            {
+            "name":"Hochschule reutlingen",
+            "image":"/collaborations/Institute/21.webp"
+            },
+            {
+            "name":"Steinbeis Univertisty",
+            "image":"/collaborations/Institute/22.webp"
+            }
+        ]
+    },
+     {
+        "id":12,
+        "list" : [
+            {
+            "name":"Univertisty of Econmics and Finance",
+            "image":"/collaborations/Institute/23.webp"
+            },
+            {
+            "name":"Suleyman Demirel Univertisty",
+            "image":"/collaborations/Institute/24.webp"
+            }
+        ]
+    },
+    {
+        "id":13,
+        "list" : [
+            {
+            "name":"Universitas Trisakthi",
+            "image":"/collaborations/Institute/25.webp"
+            },
+            {
+            "name":"Univertisty of Salford Manchester",
+            "image":"/collaborations/Institute/26.webp"
+            }
+        ]
+    },
+    {
+        "id":14,
+        "list" : [
+            {
+            "name":"UTeM",
+            "image":"/collaborations/Institute/27.webp"
+            },
+            {
+            "name":"Taipei Economics and Cultural center",
+            "image":"/collaborations/Institute/28.webp"
+            }
+        ]
+    },
+    {
+        "id":15,
+        "list" : [
+           {
+            "name":"University of Illinois",
+            "image":"/collaborations/Institute/5.webp"
+            }
+        ]
+    }
+    
+    
+     
+    
+]

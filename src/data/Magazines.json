@@ -1,0 +1,27 @@
+[
+    {
+        "magazineCoverImg":"https://adityauniversity.in/adtppu/magazines/magazine.webp",
+        "magazinedefaultImg":"https://placehold.jp/250x330.png",
+        "magazineAltText":"SRM Spectrum",
+        "magazineyear":"June-Dec 24",
+        "magazineVolume":"Vol 14 - issue 1",
+        "ShowPdf":true,
+        "downloadpdf":true,
+        "ShowDoc":true,
+        "DocLink":"/ananya-issue-1",
+        "pdfLink":"https://adityauniversity.in/adtppu/magazines/issue_1.pdf"
+    },
+     {
+        "magazineCoverImg":"https://adityauniversity.in/adtppu/magazines/magazine.webp",
+        "magazinedefaultImg":"https://placehold.jp/250x330.png",
+        "magazineAltText":"SRM Spectrum",
+        "magazineyear":"Jan-June 25",
+         "magazineVolume":"Vol 14 - issue 2",
+        "ShowPdf":true,
+        "downloadpdf":true,
+        "ShowDoc":true,
+        "DocLink":"/ananya-issue-2",
+        "pdfLink":"https://adityauniversity.in/adtppu/magazines/issue_2.pdf"
+    }
+    
+]

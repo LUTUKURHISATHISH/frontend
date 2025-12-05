@@ -1,0 +1,203 @@
+.hedingname {
+    font-size: 28px;
+    font-weight: 600;
+    color: #292929;
+}
+.hedingnamewhite {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffff;
+}
+.hedingnameorange {
+    font-size: 28px;
+    font-weight: 600;
+    color: #f05819;
+}
+
+
+.hedingname_blue {
+   color: #0c6ab0;
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.hedingname_orange {
+   color: #f05819;
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.programs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+    line-height: 0px;
+}
+
+.program {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: #292929;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 25px;
+}
+
+/* Hover effect */
+.program:hover label {
+    color: #f05819;
+    font-weight: 600;
+}
+
+/* Hide default radio button */
+.program input {
+    display: none;
+}
+
+/* Default styling for labels */
+.program label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #000;
+/*    transition: color 0.3s ease-in-out;*/
+}
+
+/* Default radio circle */
+.program label::before {
+/*    content: "○";*/
+    font-size: 25px;
+    margin-right: 2px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+/*    border: 2px solid #0c6ab0;*/
+    background-image: url("radio.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+/* Active state when URL matches */
+.program input:checked + label,
+.program a.active label {
+    color: #f05819;
+    font-weight: bold;
+}
+
+/* Filled radio button for active state */
+.program input:checked + label::before,
+.program a.active label::before {
+    /*content: "⬤";
+    color: #e65c00;*/
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        /*    border: 3px solid #f05819;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("radio_active.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+/*    transition: 0.3s;*/
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .programs {
+        align-items: center;
+/*        gap: 15px;*/
+    }
+
+    .program label {
+        font-size: 16px;
+    }
+}
+
+/*--------------------------*/
+.program_why {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: #292929;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 25px;
+}
+
+/* Hover effect */
+.program_why:hover label {
+    color: #f05819;
+    font-weight: 600;
+}
+
+/* Hide default radio button */
+.program_why input {
+    display: none;
+}
+
+/* Default styling for labels */
+.program_why label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Default radio circle */
+.program_why label::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("radio.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+/* Active state when URL matches */
+.program_why input:checked + label,
+.program_why a.active label {
+    color: #f05819;
+    font-weight: bold;
+}
+
+/* Filled radio button for active state */
+.program_why input:checked + label::before,
+.program_why a.active label::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        /*    border: 3px solid #f05819;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("radio_active.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .program_why label {
+        font-size: 16px;
+    }
+    .programs {
+     gap: 0px !important;
+    }
+}

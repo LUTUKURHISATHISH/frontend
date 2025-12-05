@@ -1,0 +1,369 @@
+.year-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0C6ab0;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: white;
+    transition: border-color 0.3sease;
+    cursor: pointer;
+}
+.scrolling-container {
+    width: 100%;
+}
+/*.year-select acitve :hover{
+  background-color: yellow;
+}*/
+
+/*staff detalil*/
+
+.staff-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.staff-card {
+  background-color: #dce9f2;
+  padding: 14px;
+  display: flex;
+  align-items: center; 
+  width: 500px; 
+  border-radius: 10px;
+}
+
+.staff-card img {
+  border-radius: 8px;
+  margin-right: 20px;
+  }
+
+.staff-detail-card {
+  text-align: left;
+  flex: 1; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .staff-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .staff-card {
+    width: 100%;
+    max-width: 350px; 
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .staff-card img {
+    margin-right: 0;
+    margin-bottom: 10px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 3000px) and (min-width: 767px) {
+    .staff-image {
+         width: 35%;
+         height: 200px;
+     }
+}
+.staff-name{
+    color: #f05819;
+    font-weight: 600;
+}
+.staff-role{
+  font-weight: 600;  
+}
+
+
+@media only screen and (max-width: 1200px) and (min-width: 1008px) {
+  .staff-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; 
+  }
+
+  .staff-card {
+    width: 48%; 
+    max-width: 500px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 14px;
+  }
+
+  .staff-card img {
+    width: 130px; 
+    height: 130px;
+    margin-right: 20px;
+  }
+}
+
+
+/*staff detali*/
+
+/*Regulations*/
+
+.accordion {
+  background-color: #fff;
+  color: #292929;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  /* border: none; */
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  position: relative;
+/*  padding: 9px 51px;*/
+  border: 1px solid #292929;
+  margin-bottom: 10px
+  }
+  
+  .active-card,.accordion:hover {
+  background-color: #f05819 !important;
+  color: #fff; 
+  }
+  
+  /*.panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  margin-bottom: 14px;
+   }*/
+  
+  .symbol {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  float: right;
+  }
+  table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  }
+  
+  table, th, td {
+  border: 1px solid #ddd;
+  }
+  
+  th, td {
+  padding: 8px;
+  
+  }
+  
+  th {
+  background-color: #0C6ab0;
+  color: #fff;
+  }
+  .namehover:hover {
+    color: #F05819 !important;
+    font-weight: 600;
+  }
+  .namehover{
+    text-align: center;
+  }
+ 
+/*Regulations*/
+.offerednames{
+  font-size: 18px;
+}
+
+.capitalize-important {
+  text-transform: capitalize !important;
+}
+
+.bg-white{
+  background-color: #FFFFFF;
+}
+.dep__table--head{
+  background-color: #00428a !important;
+  color:#FFFFFF;
+  text-align: center;
+}
+/* News Letter Section Start */
+.news--card{
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  height: 420px;
+  max-height:420px;
+}
+.news__img--wrap{
+  width: 100%;
+  background: #f1f1f1;
+  height: 340px;
+  max-height: 340px;
+  overflow: hidden;
+}
+.news__img--wrap img{object-fit: cover;}
+
+
+a:hover .news--card .newsTitle{color:#f05819}
+
+.news__text--wrap{
+  width: 100%; height: 80px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.news__text--wrap .newsTitle{
+  font-size: 1.125rem; font-weight: 600; color:#333;   
+}
+.truncate--text{
+ text-overflow: ellipsis;
+  overflow: hidden;
+}
+.lineClamp-1{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.lineClamp-2{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+@media screen and (min-width:700px) and (max-width:1200px) and (orientation: landscape){
+.news--card{
+  height: 380px;
+  max-height:380px;
+}
+.news__img--wrap{height: 300px; max-height: 300px;}
+}
+.res__pub--pageSlect{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.res__pub--selectfrm{
+  width: 120px;
+}
+
+/*Pagination styles*/
+.pagination li .page-link{
+color:#333 !important;
+padding: 0.25rem .875rem;
+}
+.pagination li .page-link:hover{
+cursor: pointer;
+color:#f05819 !important;
+background-color: transparent;
+}
+.pagination li.active .page-link{
+background-color: #f05819 !important;
+color:#FFFFFF !important;
+border-color: #f05819 !important;
+}
+.pagination li[disabled] .page-link{
+color: #999  !important;
+pointer-events: none  !important;
+background-color: #f0f0f0  !important;   
+border-color: #ccc  !important;          
+opacity: 0.7  !important;        
+}
+.pagination li[disabled] a.page-link{pointer-events: none  !important;}
+.pagination li .page-link:focus{box-shadow: none; outline: none;}
+/*====Innovative Teaching Methods page========== */
+.teaching--card{
+  /* width: 60%; */
+  background-color:transparent;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+}
+.teaching--card--imgWrap{
+  padding: .5rem;
+  /* background-color: #ddd; */
+}
+.teaching--card--contentWrap{
+  padding: .5rem 1.625rem;
+}
+.default--list{
+  list-style: none; margin: 0; padding: 0;
+}
+
+.default--list li{
+   line-height: 1.5; margin-bottom: .5rem; width: calc( 100% - 20px); text-align: justify; display: flex;
+}
+.default--list li .icon{width: 12px; margin-right: .5rem;}
+
+.default--list li:last-child{
+  margin-bottom: 0;
+}
+
+@media screen and (max-width:1023px){
+  .teaching--card { flex-direction: column}
+  .teaching--card--contentWrap { 
+    padding: 1rem 0;
+  }
+}
+@media screen and (min-width:1024px) and (max-width:1200px){
+  .teaching--card--contentWrap { 
+    padding: 0.5rem 0 .5rem 1rem;
+  }
+}
+
+/*=====Calss Room Slider in Mining Facilities Section====*/
+
+.mine__facility--swiper{
+  padding:0 1rem 0 0;
+   height: 460px;
+}
+.swipe__card--wrap{
+  width: 100%;
+  height: 380px;
+  background: #FFFFFF;
+  padding: .625rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin:.5rem;
+}
+
+.swipe__card--imgWrap{
+   width: 100%;
+  height: 300px;
+  /* object-fit: cover; */
+}
+.swipe__card--imgWrap img{width: 100%; height: 100%; object-fit: cover;}
+.swipe__card--textWrap{ display: flex; align-items: center; justify-content: center; height: 60px;}
+.swipe__card--caption{
+  font-size: 1.125rem; font-weight: 600; color:#0c6ab0;   
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{  width: 1.75rem !important; height: .75rem !important; border-radius: 1rem;}
+.swiper-pagination-bullet .swiper-pagination-bullet-active { background-color: #0c6ab0;}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active{width: 2.75rem !important}
+.text-danger{color:#f05819 !important}
+.frm--select{
+    min-width:180px ;
+    max-width: 100%;
+    padding:.5rem 1rem;
+    border: 1px solid #0C6ab0;
+    border-radius: .375rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: white;
+    transition: border-color 0.3sease;
+    cursor: pointer;
+}
+
+.emptyData{
+  width: 100%;
+  padding:2rem;
+  background: #fbfbfb;
+  border-radius: 0.5rem;
+  border:1px solid #e7e7e7;
+
+}
+.alumin__content p + p{ font-weight: bold;   color: #0c6ab0;}
