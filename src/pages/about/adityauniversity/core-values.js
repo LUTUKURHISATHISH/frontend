@@ -5,7 +5,7 @@ import ScrollToTop from '../../../components/ScrollTop';
 import point from '../../../assets/images/icons/image.png';
 import SideManu from './sidebar';
 import Banner from '../images/banners/au_core_values.webp';
-const diploma_programs = () => {
+const CoreValues = () => {
     return (
         <>
             <Header
@@ -75,4 +75,4 @@ const diploma_programs = () => {
     );
 }
 
-export default diploma_programs;
+export default CoreValues;
